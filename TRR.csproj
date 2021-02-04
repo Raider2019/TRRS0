@@ -120,6 +120,9 @@
     <EmbeddedResource Include="FormDelAccount.resx">
       <DependentUpon>FormDelAccount.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormEditAccount.resx">
+      <DependentUpon>FormEditAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEditWorker..resx">
       <DependentUpon>FormEditWorker..cs</DependentUpon>
     </EmbeddedResource>
