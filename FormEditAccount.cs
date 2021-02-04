@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace TPKR01
 {
-    public partial class FormDelAccount : Form
+    public partial class FormEditAccount : Form
     {
-        public FormDelAccount()
+        public FormEditAccount()
         {
             InitializeComponent();
         }
-
-    
     }
 }

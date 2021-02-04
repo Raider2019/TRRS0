@@ -85,6 +85,12 @@
     <Compile Include="FormDelAccount.Designer.cs">
       <DependentUpon>FormDelAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormEditAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditAccount.Designer.cs">
+      <DependentUpon>FormEditAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormEditWorker..cs">
       <SubType>Form</SubType>
     </Compile>
