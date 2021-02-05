@@ -64,6 +64,14 @@ namespace TPKR01
             this.workerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.accountDataSet = new TPKR01.AccountDataSet();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.iDAccountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDWorkerDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aNumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aObjNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aCountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.accountBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.accountDataSet1 = new TPKR01.AccountDataSet();
             this.accountBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -77,14 +85,6 @@ namespace TPKR01
             this.workerTableAdapter = new TPKR01.AccountDataSetTableAdapters.WorkerTableAdapter();
             this.accountDataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.accountTableAdapter = new TPKR01.AccountDataSetTableAdapters.AccountTableAdapter();
-            this.iDAccountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDWorkerDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aNumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aObjNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aCountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.workerBindingSource)).BeginInit();
@@ -199,11 +199,11 @@ namespace TPKR01
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 235);
+            this.label3.Location = new System.Drawing.Point(13, 262);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 3;
-            this.label3.Text = "label3";
+            this.label3.Text = "Accaunt";
             // 
             // textBox1
             // 
@@ -322,95 +322,8 @@ namespace TPKR01
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(524, 220);
+            this.dataGridView2.Size = new System.Drawing.Size(549, 224);
             this.dataGridView2.TabIndex = 6;
-            // 
-            // accountBindingSource1
-            // 
-            this.accountBindingSource1.DataMember = "Account";
-            this.accountBindingSource1.DataSource = this.accountDataSet1;
-            // 
-            // accountDataSet1
-            // 
-            this.accountDataSet1.DataSetName = "AccountDataSet";
-            this.accountDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // accountBindingSource
-            // 
-            this.accountBindingSource.DataMember = "Account";
-            this.accountBindingSource.DataSource = this.accountDataSet;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(568, 69);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Add..";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(568, 136);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Delete";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(568, 201);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Edit";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(596, 278);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(95, 32);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "Add record";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(596, 342);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(95, 28);
-            this.button5.TabIndex = 11;
-            this.button5.Text = "Delete record";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(596, 409);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(95, 35);
-            this.button6.TabIndex = 12;
-            this.button6.Text = "Edit record";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // accountDataSetBindingSource
-            // 
-            this.accountDataSetBindingSource.DataSource = this.accountDataSet;
-            this.accountDataSetBindingSource.Position = 0;
-            // 
-            // workerTableAdapter
-            // 
-            this.workerTableAdapter.ClearBeforeFill = true;
-            // 
-            // accountDataSetBindingSource1
-            // 
-            this.accountDataSetBindingSource1.DataSource = this.accountDataSet;
-            this.accountDataSetBindingSource1.Position = 0;
-            // 
-            // accountTableAdapter
-            // 
-            this.accountTableAdapter.ClearBeforeFill = true;
             // 
             // iDAccountDataGridViewTextBoxColumn
             // 
@@ -492,6 +405,94 @@ namespace TPKR01
             this.Sum.HeaderText = "Sum";
             this.Sum.Name = "Sum";
             this.Sum.ReadOnly = true;
+            // 
+            // accountBindingSource1
+            // 
+            this.accountBindingSource1.DataMember = "Account";
+            this.accountBindingSource1.DataSource = this.accountDataSet1;
+            // 
+            // accountDataSet1
+            // 
+            this.accountDataSet1.DataSetName = "AccountDataSet";
+            this.accountDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // accountBindingSource
+            // 
+            this.accountBindingSource.DataMember = "Account";
+            this.accountBindingSource.DataSource = this.accountDataSet;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(568, 69);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Add..";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(568, 136);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Delete";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(568, 201);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "Edit";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(596, 278);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(95, 32);
+            this.button4.TabIndex = 10;
+            this.button4.Text = "Add record";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(596, 342);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(95, 28);
+            this.button5.TabIndex = 11;
+            this.button5.Text = "Delete record";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(596, 409);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(95, 35);
+            this.button6.TabIndex = 12;
+            this.button6.Text = "Edit record";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // accountDataSetBindingSource
+            // 
+            this.accountDataSetBindingSource.DataSource = this.accountDataSet;
+            this.accountDataSetBindingSource.Position = 0;
+            // 
+            // workerTableAdapter
+            // 
+            this.workerTableAdapter.ClearBeforeFill = true;
+            // 
+            // accountDataSetBindingSource1
+            // 
+            this.accountDataSetBindingSource1.DataSource = this.accountDataSet;
+            this.accountDataSetBindingSource1.Position = 0;
+            // 
+            // accountTableAdapter
+            // 
+            this.accountTableAdapter.ClearBeforeFill = true;
             // 
             // Form1
             // 

@@ -27,6 +27,11 @@ namespace TPKR01
             this.workerTableAdapter.Fill(this.accountDataSet.Worker);
         }
 
-     
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormAddWorker f = new FormAddWorker(); // створюємо об’єкт типу Form2
+            if (f.ShowDialog() == DialogResult.OK) ;// виклик діалогового вікна форми Form2
+           
+        }
     }
 }
