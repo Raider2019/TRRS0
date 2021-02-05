@@ -19,12 +19,12 @@ namespace TPKR01
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.OK;
+   
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.Cancel;
+     
         }
     }
 }

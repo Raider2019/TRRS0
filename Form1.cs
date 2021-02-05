@@ -29,9 +29,10 @@ namespace TPKR01
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormAddWorker f = new FormAddWorker(); // створюємо об’єкт типу Form2
-            if (f.ShowDialog() == DialogResult.OK) ;// виклик діалогового вікна форми Form2
-           
+            FormAddWorker addf = new FormAddWorker(); // створюємо об’єкт типу Form2
+            addf.ShowDialog();// виклик діалогового вікна форми Form2
+         
+
         }
     }
 }
