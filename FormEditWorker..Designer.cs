@@ -34,7 +34,7 @@ namespace TPKR01
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -85,13 +85,13 @@ namespace TPKR01
             this.textBox1.Size = new System.Drawing.Size(351, 24);
             this.textBox1.TabIndex = 4;
             // 
-            // textBox3
+            // textBox2
             // 
-            this.textBox3.Location = new System.Drawing.Point(59, 198);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(351, 26);
-            this.textBox3.TabIndex = 6;
+            this.textBox2.Location = new System.Drawing.Point(59, 198);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(351, 26);
+            this.textBox2.TabIndex = 6;
             // 
             // button1
             // 
@@ -121,7 +121,7 @@ namespace TPKR01
             this.ControlBox = false;
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label3);
@@ -143,7 +143,7 @@ namespace TPKR01
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.ComboBox comboBox1;
         public System.Windows.Forms.TextBox textBox1;
-        public System.Windows.Forms.TextBox textBox3;
+        public System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
     }

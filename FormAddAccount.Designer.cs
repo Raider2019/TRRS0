@@ -192,6 +192,7 @@ namespace TPKR01
             this.Name = "FormAddAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Add Inventory";
+            this.Load += new System.EventHandler(this.FormAddAccount_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

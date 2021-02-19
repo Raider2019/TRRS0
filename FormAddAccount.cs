@@ -16,5 +16,18 @@ namespace TPKR01
         {
             InitializeComponent();
         }
+
+        private void FormAddAccount_Load(object sender, EventArgs e)
+        {
+           
+                textBox1.Text = "";
+                textBox2.Text = "";
+                textBox3.Text = "";
+                textBox4.Text = "";
+                textBox5.Text = "";
+                textBox6.Text = "";
+                textBox1.Focus();
+            
+        }
     }
 }

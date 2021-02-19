@@ -21,5 +21,16 @@ namespace TPKR01
         {
 
         }
+
+        private void FormAddWorker_Load(object sender, EventArgs e)
+        {
+            
+            
+                textBox1.Text = "";
+                textBox2.Text = "";
+                comboBox1.SelectedIndex = 1;
+                textBox1.Focus(); // при відкритті вікна, textBox1 отримує фокус
+            
+        }
     }
 }

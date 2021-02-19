@@ -131,6 +131,7 @@
             this.Name = "FormAddWorker";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddWorker";
+            this.Load += new System.EventHandler(this.FormAddWorker_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
